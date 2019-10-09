@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Definitely Not Craigslist</title>
+	
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<script src="js/project.js"></script>
+	
+	<!-- Custom styles for the website -->
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-top">
+	
+		<a class="navbar-brand" href="home.html" title="Home">Definitely Not Craigslist</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link mx-auto" href="profile.html">My Profile</a>
+				<a class="nav-item nav-link mx-auto active" href="messages.html">Messages</a>
+				<a class="nav-item nav-link mx-auto" href="favorites.html">Favorites</a>
+				<a class="nav-item nav-link mx-auto" href="recommended.html">Recommended</a>
+				<a class="nav-item nav-link mx-auto" href="listings.html">View All Listings</a>
+				<a class="nav-item nav-link mx-auto" href="createNew.html">Create Listing</a>
+			</div>
+			
+			<form class="form-inline my-2 my-lg-0 mx-auto" action="results.html">
+			<input class="col-lg-* form-control" type="search" placeholder="Search" aria-label="Search">
+			<select class="custom-select" id="inputGroupSelect02">
+				<option selected>Find Help</option>
+				<option value="1">Offer Help</option>
+			</select>
+			<button class="btn btn-primary my-2 my-sm-0 mx-auto" type="submit">Search</button>
+		</form>
+		</div>
+		
+		
+	</nav>
+	
+	<h1 class="my-3 text-center">Messages</h1>
+	
+	
+	<div class="text-center container">
+		<div class="row">
+		
+			<div class="text-center col-4 border d-sm-none d-md-block d-none d-sm-block ">
+				<div class="row">
+					<div class="py-0 px-0 mb-0 card favCard alert border fade show cardWidth" role="alert">
+						<div>
+							<img src="images/propic2.png" class="favPic pl-3 d-sm-none d-md-block d-none d-sm-block" title="Profile Pic" alt="Profile">
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">Mark Tuckerberg</h4>
+							<h6 class="card-subtitle mb-2 text-muted">Hi there</h6>
+						</div>
+					</div>
+				</div>		
+
+				<div class="row">
+					<div class="py-0 px-0 mb-0 card favCard alert border fade show cardWidth" role="alert">
+						<div>
+							<img src="images/propicf.png" class="favPic bg-light pl-3 d-sm-none d-md-block d-none d-sm-block" title="Profile Pic" alt="Profile">
+						</div>
+						<div class="card-body bg-light">
+							<h4 class="card-title">Sara Farrah</h4>
+							<h6 class="card-subtitle mb-2 text-muted">Ok</h6>
+						</div>
+					</div>
+				</div>	
+					
+				<input class="form-control position-absolute fixed-bottom" type="search" placeholder="Search People">
+
+			</div>
+			
+			
+			<div class="col-sm border results px-0 position-relative">	
+			
+				<div class="py-0 px-0 mb-0 bg-light card favCard alert border fade show d-block d-sm-none"  role="alert">
+						<div>
+							<img src="images/propicf.png" class="my-1" id="msgPic" title="Profile Pic" alt="Profile">
+						</div>
+						<div class="card-body py-0 bg-light">
+							<h5 class="card-title mb-0 mx-auto">Sara Farrah</h5>
+						</div>
+				</div>
+			
+			
+			
+			
+				<div class=" float-left rowWidth pt-2">
+					<div class="float-left rowWidth">
+						<img src="images/propicf.png" class="float-left msgPic ml-3" title="Profile Pic" alt="Profile">
+						<h6 class="py-1 float-right highlight bg-light">Hi can you do this for me</h6>
+					</div>
+				</div>	
+				
+				<div class=" float-right rowWidth">
+					<div class="float-right rowWidth">
+						<img src="images/profile.svg" class="float-right msgPic ml-3" title="Profile Pic" alt="Profile">
+						<h6 class="py-1 highlight2">I can do that for you</h6>
+					</div>
+				</div>	
+				
+				<div class=" float-left rowWidth">
+					<div class="float-left rowWidth">
+						<img src="images/propicf.png" class="float-left msgPic ml-3" title="Profile Pic" alt="Profile">
+						<h6 class="py-1 float-right highlight bg-light">How much will it cost</h6>
+					</div>
+				</div>	
+				
+				<div class=" float-right rowWidth">
+					<div class="float-right rowWidth">
+						<img src="images/profile.svg" class="float-right msgPic ml-3" title="Profile Pic" alt="Profile">
+						<h6 class="py-1 highlight2">It will cost this much</h6>
+					</div>
+				</div>	
+				
+				<div class=" float-left rowWidth">
+					<div class="float-left rowWidth">
+						<img src="images/propicf.png" class="float-left msgPic ml-3" title="Profile Pic" alt="Profile">
+						<h6 class="py-1 float-right highlight bg-light">Okay</h6>
+					</div>
+				</div>	
+				
+				<div class=" float-right rowWidth">
+					<div class="float-right rowWidth">
+						<img src="images/profile.svg" class="float-right msgPic ml-3 d-sm-none d-md-block d-none d-sm-block" title="Profile Pic" alt="Profile">
+						<h6 class="py-1 highlight2">Ok</h6>
+					</div>
+				</div>	
+				
+				<textarea class="form-control position-absolute fixed-bottom"  placeholder="Write Message Here" rows="3"></textarea>
+			</div>		
+			
+			
+			
+			
+			
+    
+		</div>
+	</div>
+	
+
+</body>
+
+</html>

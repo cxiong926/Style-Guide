@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Definitely Not Craigslist</title>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<script src="js/project.js"></script>
+	
+	<!-- Custom styles for the website -->
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<nav class="navbar navbar-expand-lg navbar-light border-bottom border-top" id="headerColor">
+	
+		<a class="navbar-brand" href="home.html" title="Home">Definitely Not Craigslist</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link mx-auto font-weight-bold active" href="profile.html">My Profile</a>
+				<a class="nav-item nav-link mx-auto font-weight-bold" href="messages.html">Messages</a>
+				<a class="nav-item nav-link mx-auto font-weight-bold" href="recommended.html">Recommended</a>
+				<a class="nav-item nav-link mx-auto font-weight-bold" href="listings.html">View All Listings</a>
+				<a class="nav-item nav-link mx-auto font-weight-bold" href="createNew.html">Create Listing</a>
+			</div>
+			
+			<form class="form-inline my-2 my-lg-0 mx-auto" action="results.html">
+			<input class="col-lg-* form-control" type="search" placeholder="Search" aria-label="Search">
+			<select class="custom-select" id="inputGroupSelect02">
+				<option selected>Find Help</option>
+				<option value="1">Offer Help</option>
+			</select>
+			<button class="btn btn-primary my-2 my-sm-0 mx-auto" type="submit">Search</button>
+		</form>
+		</div>
+		
+		
+	</nav>
+
+	<h1 class="my-3 text-center">My Profile</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl border text-center profileSize">
+				<h2 class="mt-2" >Molly Wolly</h2>
+				<img src="images/profile.svg" class="mt-4" id="profilePic" title="Profile Picture" alt="My Profile">
+				<div>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				</div>You have no reviews yet!<br>&nbsp<br>
+				<form>
+					<div class="form-group">
+						<input type="file" class="text-center bg-light border"><br>Upload a profile picture 
+						<h4 class="mt-4">About me:  I am an interior decorator with a lot of creativity</h4>
+					</div>
+				</form>
+				<div class="row">
+					<div class="col-sm mt-4">
+						<h3>Contact Information</h3>
+						<table class="mx-auto text-left">
+							<tr>
+								<td>Name:</td>
+								<td>Molly Wolly</td>
+							</tr>
+							<tr>
+								<td>Profession/Title:</td>
+								<td>Interior Decorator</td>
+							</tr>
+							<tr>
+								<td>Email Address:</td>
+								<td>Moowoo@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Address<br>&nbsp</td>
+								<td>742 Evergreen Terrace<br>Springfield, USA</td>
+							</tr>
+							<tr>
+								<td>Social Media:<br>&nbsp</td>
+								<td><a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="./images/facebook-icon-5.png" style="border:0px;" alt="Visit Us On Facebook" height="32"></a>
+								<a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="./images/instagram-icon2.png" style="border:0px;" alt="Visit Us On Instagram" height="32"></a>
+								<a href="https://www.snapchat.com" target="_blank" title="Snapchat"><img src="./images/snapchat-icon.png" style="border:0px;" alt="Visit Us On Snapchat" height="32"></a>
+								<a href="mailto:webmaster@example.com"><img title="Email" src="./images/email-icon.png" style="border:0px;" alt="Send us an email!" height="32"></a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm mt-4">
+						<h3>Work History</h3>
+						<table class="mx-auto text-left">
+							<tr>
+								<td class="font-weight-bold">Institution:</td>
+								<td>Interior Design Company</td>
+							</tr>
+							<tr>
+								<td>Position:</td>
+								<td>Interior Designer</td>
+							</tr>
+							<tr>
+								<td>&nbsp</td>
+								<td>&nbsp</td>
+							</tr>
+							<tr>
+								<td class="font-weight-bold">Institution:</td>
+								<td>Youtube</td>
+							</tr>
+							<tr>
+								<td>Position:</td>
+								<td>Interior Decorator</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm mt-4">
+						<h3>Education</h3>
+						<table class="mx-auto text-left">
+							<tr>
+								<td class="font-weight-bold">Institution:</td>
+								<td>UW - Stevens Point</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Doctor of Interior Design (PhD)</td>
+							</tr>
+							<tr>
+								<td>&nbsp</td>
+								<td>&nbsp</td>
+							</tr>
+							<tr>
+								<td class="font-weight-bold">Institution:</td>
+								<td>National Interior Design School</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Bachelor of Science in Quick Maths</td>
+							</tr>
+						</table>
+					</div>
+					<div class="mt-4 container">
+						<h3>Tags</h3>
+							<h6 class="mb-5">Interior Decorator</h6>
+					</div>
+					
+					<!-- Button trigger modal -->
+					<h5>Need some help filling in your info?  Try the Profile Wizard!</<h5><br>&nbsp<br>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Profile Wizard</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Profile Wizard</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+								</div>
+							<div class="modal-body">
+							This is where the wizard would be.  It guides you through the profile information process
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+
+</body>
+
+</html>

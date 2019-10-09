@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Definitely Not Craigslist</title>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<script src="js/project.js"></script>
+	
+	<!-- Custom styles for the website -->
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-top">
+	
+		<a class="navbar-brand" href="home.html" title="Home">Definitely Not Craigslist</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link mx-auto active" href="profile.html">My Profile</a>
+				<a class="nav-item nav-link mx-auto" href="messages.html">Messages</a>
+				<a class="nav-item nav-link mx-auto" href="favorites.html">Favorites</a>
+				<a class="nav-item nav-link mx-auto" href="recommended.html">Recommended</a>
+				<a class="nav-item nav-link mx-auto" href="listings.html">View All Listings</a>
+				<a class="nav-item nav-link mx-auto" href="createNew.html">Create Listing</a>
+			</div>
+			
+			<form class="form-inline my-2 my-lg-0 mx-auto" action="results.html">
+			<input class="col-lg-* form-control" type="search" placeholder="Search" aria-label="Search">
+			<select class="custom-select" id="inputGroupSelect02">
+				<option selected>Find Help</option>
+				<option value="1">Offer Help</option>
+			</select>
+			<button class="btn btn-primary my-2 my-sm-0 mx-auto" type="submit">Search</button>
+		</form>
+		</div>
+		
+		
+	</nav>
+
+	<h1 class="my-3 text-center">View Profile</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl border text-center profileSize">
+				<h2 class="mt-2" >Abby Arlen</h2>
+				<img src="images/propicf.png" class="mt-4" id="profilePic" title="Profile Picture" alt="My Profile">
+				<div>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				</div>6 Reviews<br>&nbsp<br>
+
+				<h4>About me:  Self-employed plumber for 10 years.  Owner of Pipe Layers Inc.</h4>
+
+				<div class="row">
+					<div class="col-sm mt-4">
+						<h3>Contact Information</h3>
+						<table class="mx-auto text-left">
+							<tr>
+								<td>Name:</td>
+								<td>Abby Arlen</td>
+							</tr>
+							<tr>
+								<td>Profession/Title:</td>
+								<td>Plumber</td>
+							</tr>
+							<tr>
+								<td>Email Address:</td>
+								<td>abbypipelayer@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Address<br>&nbsp</td>
+								<td>123 Pipe Street<br>Stevens Point, WI</td>
+							</tr>
+							<tr>
+								<td>Social Media:<br>&nbsp</td>
+								<td><a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="./images/facebook-icon-5.png" style="border:0px;" alt="Visit Us On Facebook" height="32"></a>
+								<a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="./images/instagram-icon2.png" style="border:0px;" alt="Visit Us On Instagram" height="32"></a>
+								<a href="https://www.snapchat.com" target="_blank" title="Snapchat"><img src="./images/snapchat-icon.png" style="border:0px;" alt="Visit Us On Snapchat" height="32"></a>
+								<a href="mailto:webmaster@example.com"><img title="Email" src="./images/email-icon.png" style="border:0px;" alt="Send us an email!" height="32"></a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm mt-4">
+						<h3>Work History</h3>
+						<table class="mx-auto text-left">
+							<tr>
+								<td class="font-weight-bold">Institution:</td>
+								<td>Pipe Layers Inc</td>
+							</tr>
+							<tr>
+								<td>Position:</td>
+								<td>Owner</td>
+							</tr>
+							<tr>
+								<td>&nbsp</td>
+								<td>&nbsp</td>
+							</tr>
+							<tr>
+								<td class="font-weight-bold">Institution:</td>
+								<td>Youtube</td>
+							</tr>
+							<tr>
+								<td>Position:</td>
+								<td>Plumber</td>
+							</tr>
+						</table>
+						<a href="#">View More</a>
+					</div>
+					<div class="col-sm mt-4">
+						<h3>Education</h3>
+						<table class="mx-auto text-left">
+							<tr>
+								<td class="font-weight-bold">Institution:</td>
+								<td>Northcentral Technical College</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Licensed Plumber</td>
+							</tr>
+							<tr>
+								<td>&nbsp</td>
+								<td>&nbsp</td>
+							</tr>
+							<tr>
+								<td class="font-weight-bold">Institution:</td>
+								<td>UW - Stevens Point</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Master of Business Administration</td>
+							</tr>
+						</table>
+					</div>
+					<div class="mt-4 container">
+						<h3>Tags</h3>
+						<h6 class="mb-5">Plumber</h6>
+						
+						
+					</div>
+					
+					<textarea class="form-control mb-2" placeholder="Write Message Here" rows="3"></textarea>
+					<button class="btn btn-primary mb-5">Send Message</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+
+</body>
+
+</html>

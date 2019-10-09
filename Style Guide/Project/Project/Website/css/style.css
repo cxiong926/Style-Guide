@@ -1,0 +1,59 @@
+#profile{
+	height:40px;
+}
+#profilePic{
+	height: 150px;
+}
+#msgPic{
+	height:40px;
+}
+.cardWidth{
+	width:50rem;
+}
+.highlight{
+	width:80%;
+	border-radius: 25px;
+}
+.highlight2{
+	width:80%;
+	border-radius: 25px;
+	background-color:#51ECE7;
+}
+
+.favPic{
+	height:100px;
+}
+.msgPic{
+	height:30px;
+}
+.navbar-brand{
+	font-weight:bold;
+	font-size:30px;
+}
+.checked {
+  color: orange;
+}
+.infoBox{
+	height:200px;
+}
+.homeCard{
+	width: 18rem;
+}
+.favCard{
+	flex-direction:row;
+	align-items:center;
+}
+.results{
+	height:730px;
+	overflow-y: scroll;
+}
+.wider{
+	width: 90%;
+}
+
+.row{
+	justify-content:space-evenly;
+}
+.rowWidth{
+	width:70%;
+}

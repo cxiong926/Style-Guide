@@ -1,0 +1,21 @@
+Random note:  Clicking Search will always take you to the results page.  Mimics user entering a "find help" search.
+
+Random note:  Items on the profile page will be editable.  I didn't implement anything to make it work.
+
+Random note:  Create a listing will have user info prefilled if logged in.
+
+Are the login and signup buttons done decently? (different colors)
+
+Make collapsible section for filters on results pages and for messages
+
+Global navigation needed?
+
+How to make elements wider when in mobile view?
+
+Where should we put the design notes?
+
+Todo: Create a page to view service provider's profile
+
+Todo: Add sort by?
+
+Todo: Change message preview

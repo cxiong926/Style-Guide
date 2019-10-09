@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Bobby Xiong, Sam Ziegler, Anthony Lacy">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<title>Style Guide</title>
+		
+		
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<!-- JavaScript -->
+		<script src="js/project.js"></script>
+		
+		<!-- Custom styles for the website -->
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Tab Icon -->
+		<link rel="icon" type="image/png" href="./images/icon.png">
+		
+			
+	</head>
+
+	
+	<body>
+	
+
+			<!-- Top Nav -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-top">
+			<a class="navbar-brand font-weight-bold pl-3" href="styleGuide.html" title="Home">Style Guide</a>
+			
+			<button class="navbar-toggler" id="sidebarToggle" type="button" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			</nav>
+
+			<div class="container-fluid page">
+				<div class="row">
+				
+					<!-- Sidebar Links -->
+					<div class="col-sm-2 text-center border-left border-bottom hideSidebar " id="sidebar">
+						<div class="navbar-nav">
+							<!-- Scope and Purpose / Layout -->
+							<a class="nav-item nav-link mx-auto h4 pt-3" href="#scope">Scope and Purpose</a>
+							<a class="nav-item nav-link mx-auto pb-1 h5" href="#layout">Layout</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#grid">Responsive Grid</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#palette">Color Palette</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#dimensions">Dimensions</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#images">Images</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#tables">Tables</a>
+							
+							<!-- Typography -->
+							<a class="nav-item nav-link mx-auto pb-1 h5" href="#typography">Typography</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#font">Font</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#headings">Heading Styles</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#links">Hyperlinks</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#labels">Labels</a>
+							
+							<!-- UI Components -->
+							<a class="nav-item nav-link mx-auto pb-1 h5" href="#ui">UI Components</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#buttons">Buttons</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#cards">Cards</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#input">Input</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#modals">Modals</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#nav">Navigation Menus</a>
+							<a class="nav-item nav-link mx-auto py-1" href="#noti">Notifications</a>
+						</div>
+					</div>
+					
+					<!-- Main Content -->
+					<div class="col border-left border-bottom border-right px-4 pt-3 fixed">
+							
+							<!-- Scope -->
+							<a name="scope"></a> 
+							<h2 class="pt-2 mb-2">Scope and Purpose</h2>
+						
+							<p>Definitely Not Craigslist is a growing share economy website.  Our goal is to be as inclusive as possible.  
+							We want people of all ages and with all sorts of technology capabilities to use our services.  We do this by keeping the 
+							site simple for everyone to use. Our style guide is designed to inspire developers that also want to make highly 
+							accessible sites and for our developers to keep building on this idea.  The layout is responsive 
+							and will look great on many different screens.  To achieve this, Bootstrap v4.3.1 was used as our framework.  Much of the
+							styles and layout is based on Bootstrap's structure and functionality.  We used Marvel and Bootstrap’s Style guide as inspiration
+							for ours.
+							</p>
+							
+							<p class="mb-0"><a class="card-link" href="#" id="iframeAToggle" title="View Desktop Site">View Desktop Site</a></p>
+							<p class=""><a class="card-link" href="#" id="iframeBToggle" title="View Mobile Site">View Mobile Site</a></p>
+							<iframe class="hideme" src="Project/home.html" scrolling="no" id="iframeA" height="720px" width="1400"></iframe>
+							<iframe class="hideme" src="Project/home.html" id="iframeB" height="640px" width="360"></iframe>
+							<hr>
+							
+							
+							
+							<!-- Layout -->
+							<a name="layout"></a> 
+							
+							<h2 class="pt-4">Layout</h2>
+							<p>Accessibility is one of our biggest concerns.  The layout of Definitely Not Craigslist was designed with everyone in mind.  
+							We want as much people to be able to use the site as possible. We strive to achieve this with our visually appealing guidelines mixed with a
+							responsive layout.  The site will look great on desktop and mobile devices.
+							</p>
+							
+							<!-- Grid -->
+							<a name="grid"></a> 
+							<h3 class="">Responsive Grid</h3>
+    
+							<h5 class="mt-3">Description</h5>
+							<p>Definitely Not Craigslist uses Bootstrap's 12-column grid that allows for a wide variety of layouts.  
+								The columns are placed within the .row class, which is in a .container class.  
+								The .container class defines the container of elements. It changes its width based on the viewport. If the entire width of the 
+								viewport is preferred, the .container-fluid class can be used instead.
+								Columns will automatically size themselves to fill in the container. By default, rows have flex wrap and will wrap content 
+								based on the size of the viewport. The .flex-nowrap class can be used to disable this style.
+							</p>
+							
+							<h5 class="mt-3">Equal Width Columns</h5>
+							<p>The simplest way to create columns is by using .col.  This method will create columns with equal width.  The sizes will stay the same
+								as the viewport changes.
+							</p>
+							
+							<h5 class="mt-3">Specific Width Columns</h5>
+							<p>If specific widths are desired for elements, .col can be appended with a dash and a number between between one and twelve.
+							The number determines the width of the column relative to the row.
+							</p>
+							<h5 class="mt-3">Examples</h5>
+								<div class="border container-fluid">.container-fluid<br>&nbsp<br>.row with three .col divs
+									<div class="row px-3 pb-4 text-center">
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+									</div>
+									
+									.row with twelve .col divs
+									<div class="row px-3 pb-4 text-center">
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+										<div class="col border border-dark">.col</div>
+									</div>
+									
+									.row with specific width .col divs
+									<div class="row px-3 pb-4 text-center">
+										<div class="col-2 border border-dark">.col-2</div>
+										<div class="col-6 border border-dark">.col-6</div>
+										<div class="col-2 border border-dark">.col-2</div>
+									</div>
+									
+									.row with combination of specific and nonspecific .col divs
+									<div class="row px-3 pb-4 text-center">
+										<div class="col-1 border border-dark">.col-1</div>
+										<div class="col-2 border border-dark">.col-2</div>
+										<div class="col-3 border border-dark">.col-3</div>
+										<div class="col border border-dark">.col</div>
+									</div>
+								</div>
+							<h5 class="mt-3">Code Snippet</h5>
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;div class="border container-fluid">
+
+		&lt;!-- row with twelve .col divs -->
+		&lt;div class="row px-3 pb-3 text-center">
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+			&lt;div class="col border">.col&lt;/div>
+		&lt;/div>
+		
+		&lt;!--row with specific width .col divs -->
+		&lt;div class="row px-3 pb-3 text-center">
+			&lt;div class="col-2 border">.col-2&lt;/div>
+			&lt;div class="col-6 border">.col-6&lt;/div>
+			&lt;div class="col-2 border">.col-2&lt;/div>
+		&lt;/div>
+		
+		&lt;!-- .row with combination of .col types -->
+		&lt;div class="row px-3 pb-3 text-center">
+			&lt; class="col-1 border">.col-1&lt;/div>
+			&lt; class="col-2 border">.col-2&lt;/div>
+			&lt; class="col-3 border">.col-3&lt;/div>
+			&lt; class="col border">.col&lt;/div>
+		&lt;/div>
+	&lt;/div>
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							<!-- Palette -->
+							<a name="palette"></a> 
+							<h3 class="pt-4 mb-3">Color Palette</h3>
+								<div class="row text-center font-weight-bold px-3">
+									<div class="palette rounded mr-3 my-1" id="primary">Primary<br>#C0B283</div>
+									<div class="palette rounded mr-3 my-1" id="secondary">Secondary<br>#DCD0C0</div>
+									<div class="palette rounded mr-3 my-1" id="notifications">Notifications<br>#FFF3CD</div>
+									<div class="palette rounded mr-3 my-1" id="accents">Accents<br>#DEE2E6</div>
+									<div class="palette rounded mr-3 my-1" id="button">Buttons<br>#007BFF</div>
+									<div class="palette rounded mr-3 my-1" id="background">Background<br>#F4F4F4</div>
+								</div>
+							<h5 class="mt-3">Description</h5>
+							<p>Definitely Not Craigslist wants to maintain simplicity with everything, including color.  Our light color scheme is meant to be
+							easy on the eyes and easy to read so that users can browse to their heart's content.  The colors were selected with contrast in mind and verified for readability
+							using <a class="card-link" href="https://webaim.org/resources/contrastchecker/" title="www.webaim.org">WebAIM's</a> contrast checker.
+							Links and text should keep their default color values to avoid any
+							user confusion. Examples of these colors can be found throughout this style guide.
+							</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>Primary - The main color of the <a class="ml-0 thumb card-link" href="#nav">navigation bar<span class="border border-secondary"><img src="images/heading_styleguide.jpg"></span></a></li>
+								<li>Secondary - The color for <a class="ml-0 thumb card-link" href="#cards">cards<span class="border border-secondary"><img src="images/cards.jpg"></span></a></li>
+								<li><a class="ml-0 thumb card-link" href="#noti">Notifications<span class="border"><img src="images/notification.jpg"></span></a></li>
+								<li>Accents - Used for all borders.  Examples located throughout style guide.</li>
+								<li>Buttons - All buttons are colored using Bootstrap’s .btn-primary class.</li>
+								<li>Background - Used as the <a class="ml-0 thumb card-link" href="#">background<span class="border"><img src="images/background.png"></span></a>color</li>
+							</ul>
+							
+							<h5>Code Snippet</h5>
+							<p>This code snippet shows the classes that are predefined that developers can utilize.
+							</p>
+							<figure class="border">
+								<pre>
+									<code>
+	.primary{
+		background-color:#C0B283;
+	}
+	.secondary{
+		background-color:#DCD0C0;
+	}
+	.notifications{
+		background-color:#fff3cd;
+	}
+	.accents{
+		background-color:#dee2e6;
+	}
+	.background{
+		background-color:#F4F4F4;
+	}
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							<!-- Dimensions -->
+							<a name="dimensions"></a> 
+							<h3 class="pt-4 mb-3">Dimensions</h3>
+							<iframe src="Project/recommended.html" scrolling="no" name="iframe_a" height="720px" width="1400"></iframe>
+							<h5 class="mt-3">Description</h5>
+							<p>Definitely Not Craigslist uses Bootstrap’s .container class as the main container.  This gives us a responsive box in the center of the page
+							that changes size based on breakpoints.  Bootstrap has default margins and padding set for different elements.  Their spacing classes can be used if you 
+							want something other than these defaults. These classes are easy to use because how they're named. They assign a rem size to the applied margin or padding.  
+							Bootstrap's default margins and padding are generally appropriate and should be left as is.
+							</p>
+							
+							<h5 class="mt-3">Guide</h5>
+							<p>Bootstrap offers an easy way to add margins and padding. There are simple classes to change margins and padding
+							 without having to code any CSS.  A complete guide to Bootstrap's spacing can be found <a class="card-link" href=" https://getbootstrap.com/docs/4.3/utilities/spacing/">here.</a>
+							</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>&lt;h1> headings should be given the .my-3 class for enough spacing from the nav bar and main content.</li>
+								<li><a class="card-link" href="Project/listings.html">Labels</a> should have mt-4 for proper spacing between filters.</li>
+								<li><a class="card-link" href="Project/home.html">Cards</a> should be given my-3 so they have sufficient spacing between them and pb-4 to increase their size.</li>
+								<li><a class="card-link" href="Project/recommended.html">Multiple containers</a> should have the .my-3 class for adequate gaps between them.</li>
+								<li><a class="card-link" href="Project/recommended.html">Multiple rows</a> should have the .mb-2 class for enough space between them.</li>
+							</ul>
+							
+							<h5>Code Snippet</h5>
+							<p>Examples of usage.
+							</p>
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;!-- Headings -->
+	&lt;h1 class="my-3 text-center">My Dashboard&lt;/h1>								
+					
+	&lt;!-- Labels -->					
+	&lt;label class="font-weight-bold mt-4">Distance&lt;/label>
+					
+	&lt;!-- Cards -->					
+	&lt;div class="col-xs-4">
+		&lt;div class="card homeCard cardHover  my-3 pb-4">
+			&lt;div class="card-body">
+				&lt;h5 class="card-title">View All Listings&lt;/h5>
+				&lt;h6 class="card-subtitle mb-2 ">(12) New Listings&lt;/h6>
+				&lt;p class="card-text text-reset">Find people that need help from you or ask the experts for help&lt;/p>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	
+	&lt;!-- Containers and rows -->
+	&lt;div class="my-2 container">
+		&lt;div class="row mb-2">
+		&lt;/div>	
+		&lt;div class="row mb-2">
+		&lt;/div>	
+	&lt;/div>
+	
+	&lt;div class="my-2 container">
+		&lt;div class="row mb-2">
+		&lt;/div>	
+		&lt;div class="row mb-2">
+		&lt;/div>	
+	&lt;/div>
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							<!-- Images -->
+							<a name="images"></a> 
+							<h3 class="pt-4 mb-3">Images</h3>
+							<img src="images/propic2.png" class="mt-4 ml-2 mr-5 profilePic" title="Profile Picture">
+							<img src="images/propicf.png" class="mt-4 ml-2 mr-5 profilePic" title="Profile Picture">
+							<img src="images/propic2.png" class="mt-4 ml-2 mr-5 msgPic" title="Message Picture">
+							<img src="images/propicf.png" class="mt-4 ml-2 mr-5 msgPic" title="Message Picture">
+							
+							<h5 class="mt-3">Description</h5>
+							<p>All profile images are cropped as circles.  The larger pictures are used for profile pages and are sized to 150px by 150px with
+							the .profilePic class.  The smaller pictures are used as thumbnails in the messaging service and are sized to 40px by 40px with the .msgPic class.
+							These classes allow the images to be clear on both pages without being intrusive.
+							</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>.profilePic - User Profiles</li>
+								<li>.msgPic - Message Thumbnails</li>
+							</ul>
+							
+							<h5>Code Snippet</h5>
+							<p>Below are the CSS classes and how they're applied to images.
+							</p>
+							<figure class="border">
+								<pre>
+									<code>
+	img {
+		border-radius: 50%;
+	}
+	.profilePic{
+		height: 150px;
+		width: 150px;
+	}
+	.msgPic{
+		height:40px;
+		width:40px;
+	}
+	&lt;!-- Profile Picture -->
+	&lt;img src="images/propicf.png" class="profilePic" title="Profile Picture">
+	
+	&lt;!-- Messenger Thumbnail -->
+	&lt;!-- Headings -->
+	&lt;img src="images/propic2.png" class="msgPic" title="Message Picture">
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							<!-- Tables -->
+							<a name="tables"></a> 
+							<h3 class="pt-4 mb-3">Tables</h3>
+							<div class="row mb-3">
+								<div class="col-sm">
+									<h4 class="text-center">Contact Information</h3>
+									<table class="mx-auto text-left">
+										<tr>
+											<td class="font-weight-bold">Name:</td>
+											<td>Molly Wolly</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Profession/Title:</td>
+											<td>Interior Decorator</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Email Address:</td>
+											<td>Moowoo@gmail.com</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Address:<br>&nbsp</td>
+											<td>742 Evergreen Terrace<br>Springfield, USA</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Social Media:<br>&nbsp</td>
+											<td><a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="./images/facebook-icon-5.png" style="border:0px;" alt="Visit Us On Facebook" height="32"></a>
+											<a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="./images/instagram-icon2.png" style="border:0px;" alt="Visit Us On Instagram" height="32"></a>
+											<a href="https://www.snapchat.com" target="_blank" title="Snapchat"><img src="./images/snapchat-icon.png" style="border:0px;" alt="Visit Us On Snapchat" height="32"></a>
+											<a href="mailto:webmaster@example.com"><img title="Email" src="./images/email-icon.png" style="border:0px;" alt="Send us an email!" height="32"></a></td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-sm mt-4">
+									<h4 class="text-center">Work History</h3>
+									<table class="mx-auto text-left">
+										<tr>
+											<td class="font-weight-bold">Institution:</td>
+											<td>Interior Design Company</td>
+										</tr>
+										<tr>
+											<td class="font-italic">Position:</td>
+											<td>Interior Designer</td>
+										</tr>
+										<tr>
+											<td>&nbsp</td>
+											<td>&nbsp</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Institution:</td>
+											<td>Youtube</td>
+										</tr>
+										<tr>
+											<td class="font-italic">Position:</td>
+											<td>Interior Decorator</td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-sm mt-4">
+									<h4 class="text-center">Education</h3>
+									<table class="mx-auto text-left">
+										<tr>
+											<td class="font-weight-bold">Institution:</td>
+											<td>UW - Stevens Point</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>Doctor of Interior Design (PhD)</td>
+										</tr>
+										<tr>
+											<td>&nbsp</td>
+											<td>&nbsp</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Institution:</td>
+											<td>National Interior Design School</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td>Bachelor of Science in Quick Maths</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							
+							<h5 class="mt-3">Description</h5>
+							<p>Definitely Not Craigslist uses tables to structure the content found in profiles.  Tables should all be titled using a centered &lt;h4> tag.  
+							All cells should be left justified with the cells on the left bold or italicized.  There should be at most three tables to a row to avoid clutter.
+							</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>Profile Information</li>
+							</ul>
+							
+							<h5>Code Snippet</h5>
+							<p>Below is the code for a typical profile table.
+							</p>
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;!-- Table Row -->								
+	&lt;div class="row mb-3">
+	
+		&lt;!-- Table 1 -->
+		&lt;div class="col-sm">
+			&lt;h4 class="text-center">Contact Information&lt;/h3>
+			&lt;table class="mx-auto text-left">
+				&lt;tr>
+					&lt;td class="font-weight-bold">Name:&lt;/td>
+					&lt;td>Molly Wolly&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td class="font-weight-bold">Profession/Title:&lt;/td>
+					&lt;td>Interior Decorator&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td class="font-weight-bold">Email Address:&lt;/td>
+					&lt;td>Moowoo@gmail.com&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td class="font-weight-bold">Address:&lt;br>&nbsp&lt;/td>
+					&lt;td>742 Evergreen Terrace&lt;br>Springfield, USA&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td class="font-weight-bold">Social Media:&lt;br>&nbsp&lt;/td>
+					&lt;td>&lt;a href="https://www.facebook.com" target="_blank" title="Facebook">&lt;img src="./images/facebook-icon-5.png" style="border:0px;" alt="Visit Us On Facebook" height="32">&lt;/a>
+					&lt;a href="https://www.instagram.com" target="_blank" title="Instagram">&lt;img src="./images/instagram-icon2.png" style="border:0px;" alt="Visit Us On Instagram" height="32">&lt;/a>
+					&lt;a href="https://www.snapchat.com" target="_blank" title="Snapchat">&lt;img src="./images/snapchat-icon.png" style="border:0px;" alt="Visit Us On Snapchat" height="32">&lt;/a>
+					&lt;a href="mailto:webmaster@example.com">&lt;img title="Email" src="./images/email-icon.png" style="border:0px;" alt="Send us an email!" height="32">&lt;/a>&lt;/td>
+				&lt;/tr>
+			&lt;/table>
+		&lt;/div>
+		
+		&lt;!-- Table 2 -->
+		&lt;div class="col-sm mt-4">
+			&lt;h4 class="text-center">Work History&lt;/h3>
+			&lt;table class="mx-auto text-left">
+				&lt;tr>
+					&lt;td class="font-weight-bold">Institution:&lt;/td>
+					&lt;td>Interior Design Company&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td class="font-italic">Position:&lt;/td>
+					&lt;td>Interior Designer&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td>&nbsp&lt;/td>
+					&lt;td>&nbsp&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td class="font-weight-bold">Institution:&lt;/td>
+					&lt;td>Youtube&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td class="font-italic">Position:&lt;/td>
+					&lt;td>Interior Decorator&lt;/td>
+				&lt;/tr>
+			&lt;/table>
+		&lt;/div>
+		
+		&lt;!-- Table 3 -->
+		&lt;div class="col-sm mt-4">
+			&lt;h4 class="text-center">Education&lt;/h3>
+			&lt;table class="mx-auto text-left">
+				&lt;tr>
+					&lt;td class="font-weight-bold">Institution:&lt;/td>
+					&lt;td>UW - Stevens Point&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td>&lt;/td>
+					&lt;td>Doctor of Interior Design (PhD)&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td>&nbsp&lt;/td>
+					&lt;td>&nbsp&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td class="font-weight-bold">Institution:&lt;/td>
+					&lt;td>National Interior Design School&lt;/td>
+				&lt;/tr>
+				&lt;tr>
+					&lt;td>&lt;/td>
+					&lt;td>Bachelor of Science in Quick Maths&lt;/td>
+				&lt;/tr>
+			&lt;/table>
+		&lt;/div>
+	&lt;/div>
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							<!-- Typography -->
+							<a name="typography"></a> 
+							<h3 class="pt-4">Typography</h3>
+							<p>Definitely Not Craigslist doesn't try to reinvent the wheel when it comes to typography.  Bootstrap is a popular framework that's widely used.  
+							We decided that they must be doing something right with their typography choices and that we shouldn't change much.  Our usage and tweaks of Bootstrap’s
+							typography styles are listed in this section.</p>
+							
+							<!-- Font -->
+							<a name="font"></a> 
+							<h3 class="pt-4 mb-3">Font</h3>
+							<h5>Description</h5>
+							<p>To provide maximum readability across multiple devices, Bootstrap uses a font stack.  The font will change depending on the 
+							device being used.  Definitely Not Craigslist does not make any changes to this font stack. The default font and browser combinations are:</p>
+							<ul>
+								<li>Safari and Apple Products - "San Francisco"</li>
+								<li>Windows - "Segoe UI"</li>
+								<li>Android - "Roboto"</li>
+								<li>Emojis - "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"</li>
+								<li>Fallback - "Helvetica Neue", Arial, sans-serif"</li>
+							</ul>
+							<h5>Code Snippet</h5>
+							<p>This code snippet shows the default font stack.</p>
+							<figure class="border">
+								<pre>
+									<code>
+	$font-family-sans-serif:
+	// Safari for OS X and iOS (San Francisco)
+	-apple-system,
+	  
+	// Chrome < 56 for OS X (San Francisco)
+	BlinkMacSystemFont,
+	  
+	// Windows
+	"Segoe UI",
+	  
+	// Android
+	"Roboto",
+	  
+	// Basic web fallback
+	"Helvetica Neue", Arial, sans-serif,
+	  
+	// Emoji fonts
+	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							<!-- Headings -->
+							<a name="headings"></a> 
+							<!-- Put a real html example here!!! -->
+							<h3 class="pt-4 mb-3">Headings</h3>
+							
+							<h1 class="py-0"> &lt;h1> Example - 2.5 rem</h1>
+							<h2 class="py-0"> &lt;h2> Example - 2 rem</h2>
+							<h3 class="py-0"> &lt;h3> Example - 1.75 rem</h3>
+							<h4 class="py-0"> &lt;h4> Example - 1.33 rem</h4>
+							<h5 class="py-0"> &lt;h5> Example - 1.25 rem</h5>
+							<h6 class="text-muted py-0"> &lt;h6> Example - 1 rem</h6>
+							
+							<h5 class="mt-3">Description</h5>
+							<p>The heading styles used in this website are automatically resized by bootstrap. They are slightly different than the default HTML5 heading styles.</p>
+								
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>&lth1> is used for page titles</li>
+								<li>&lth2> is used for names at the top of user profiles</li>
+								<li>&lth3> is used for item headings in accordions</li>
+								<li>&lth4> is used for names of people in the listings page</li>
+								<li>&lth5> is used for card titles</li>
+								<li>&lth6> is used to display user ocupations. When they are used in this website, they always have the "text-muted" bootstrap class applied.</li>
+							</ul>
+							
+							<h5>Code Snippet</h5>
+							<p>Here is how each heading is implemented in html
+							</p>
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;h1 class="my-3 text-center">Recommended&lt;/h1><br>
+	&lt;h2 class="mt-2">Molly Wolly&lt;/h2><br>
+	&lt;h3>Contact Information&lt;/h3><br>
+	&lt;h4 class="mt-4">About me:  I am an interior decorator with a lot of creativity&lt;/h4><br>
+	&lt;h5 class="card-title">View All Listings&lt;/h5><br>
+	&lt;h6 class="card-subtitle mb-2 text-muted">(12) New Listings&lt;/h6>
+									</code>
+								</pre>
+							</figure>
+							<hr>
+						
+							<!-- Hyperlinks -->
+							<a name="links"></a> 
+							<h3 class="pt-4 mb-3">Hyperlinks</h3>
+							<nav class="navbar navbar-expand-lg navbar-light border-bottom border-top" id="headerColor">
+	
+								<a class="navbar-brand" href="home.html" title="Home">Brand Link</a>
+								
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								
+								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+									<div class="navbar-nav">
+										<a class="nav-item nav-link mx-auto font-weight-bold active" href="profile.html">Active Page</a>
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="messages.html">Page 1</a>
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="recommended.html">Page 2</a>
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="listings.html">Page 3</a>
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="createNew.html">Page 4</a>
+									</div>
+								</div>
+							</nav>
+							<br>
+							<a href="#" class="card-link">Normal link</a>
+							<h5 class="mt-3">Description</h5>
+							
+							<p>Throughout the website, with the exception of the nav bar items, hyperlinks have a font size of 1 rem and a color of #0056b3
+							while being hovered (a dark shade of blue) and a color of #007bff (a lighter shade of blue) without being hovered. These are the default
+							colors that Bootstrap uses.  They are similar to unstyled links and should easily be recognized by users.  All nav bar links are bold with the 
+							brand link at 30px. Nav bar links to other pages are gray and turn black when hovered.  The current page link is always black.
+
+							There is no text decoration for any link.
+							</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>Links should be placed in the navigation bar to allow for quick navigation</li>
+								<li>Links should also allow users to view profile information as well redirect </li>
+							</ul>
+							
+							<h5>Code Snippet</h5>
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;a class="nav-item nav-link mx-auto font-weight-bold" href="#">Page 1&lt;/a>
+	&lt;a href="memberProfile.html" class="card-link">View Profile&lt;/a>
+	&lt;a href="#" class="card-link">View History with Member&lt;/a>
+	&lt;a href="#" class="card-link">Send Message&lt;/a>
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							<!-- Labels -->
+							<a name="labels"></a>
+							<h3 class="pt-4 mb-3">Labels</h3>
+							
+							<div class="font-weight-bold form-group">
+								<label>Post Type</label>
+								<select class="form-control" id="exampleFormControlSelect1">
+									<option>Find Help</option>
+									<option>Offer Help</option>
+									</select>
+							</div>
+							
+							<div class="font-weight-bold form-row">
+								<div class="form-group col-md-6">
+									<label>Email</label>
+									<input type="email" class="form-control" value="molly@gmail.com">
+								</div>
+								
+								<div class="form-group col-md-6">
+									<label>Phone Number</label>
+									<input type="text" class="form-control" value="123-456-7890">
+								</div>
+							</div>
+							
+							<h5 class="mt-3">Description</h5>
+							<p>This website uses default HTML5 labels with the .font-weight-bold class applied to increase readability.
+							</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>Used to label form inputs.</li>
+							</ul>
+							
+							<h5>Code Snippet</h5>
+							<p>Here is the code used to create labels throughout the website
+							</p>
+							<figure class="border">
+								<pre>
+									<code>
+
+	&lt;div class="font-weight-bold form-group">
+		&lt;label>Post Type&lt;/label>
+		&lt;select class="form-control" id="exampleFormControlSelect1">
+			&lt;option>Find Help&lt;/option>
+			&lt;option>Offer Help&lt;/option>
+			&lt;/select>
+	&lt;/div>
+
+	&lt;div class="font-weight-bold form-row">
+		&lt;div class="form-group col-md-6">
+			&lt;label>Email&lt;/label>
+			&lt;input type="email" class="form-control" value="molly@gmail.com">
+		&lt;/div>
+		
+		&lt;div class="form-group col-md-6">
+			&lt;label>Phone Number&lt;/label>
+			&lt;input type="text" class="form-control" value="123-456-7890">
+		&lt;/div>
+	&lt;/div>
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							<!-- UI Components -->
+							<a name="ui"></a> 
+							<h3 class="pt-4">UI Components</h3>
+							<p>User Interface components are widely used throughout the site and can be found on every page.  Since they're so prevalent, it's important to keep them looking
+							consistent. Below are the guidelines for implementing these components.</p>				
+							
+							<!-- Buttons -->
+							<a name="buttons"></a>
+							
+							<h3 class="pt-4 mb-3">Buttons</h3>
+								<button class="btn btn-primary my-2 my-sm-0 mx-auto" type="submit">Button</button>
+					
+							<h5 class="mt-3">Description</h5>
+							<p>Definitely Not Craigslist uses buttons mainly for forms such as login or creating a listing. Buttons are styled using Bootstrap’s .btn and
+							.btn-primary classes.
+							</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>Login</li>
+								<li>Search bar</li>
+								<li>Forms</li>
+								
+								
+							</ul>
+							<h5>Code Snippet</h5>
+								<figure class="border">
+									<pre>
+										<code>
+	&lt;button class="btn btn-primary my-2 my-sm-0 mx-auto" type="submit">Button&lt;/button>
+										</code>
+									</pre>
+								</figure>
+								<br/>
+							<hr>
+							
+							<!-- Cards -->
+							<a name="cards"></a> 
+							<h3 class="pt-4 mb-3">Cards</h3>
+								<!-- Card Example -->
+								<div class="col">
+									<div class="card cardHover my-3 homeCard">
+										<div class="card-body">
+											<h5 class="card-title">Card Title</h5>
+											<h6 class="card-subtitle mb-2 text-muted">Subtitle</h6>
+												<p class="card-text">Details: This is where details can be displayed</h5>
+										</div>
+									</div>
+								</div>
+								
+							<h5 class="mt-3">Description</h5>
+							<p>Cards are used to organize the main content on the home screen.  The cards have a title, subtitle, and a short description about what information can be found
+							if clicked.
+							</p>
+							
+							<h5>Code Snippet</h5>
+							
+							<figure class="border">
+									<pre>
+										<code>
+	&lt;div class="col">
+		 &lt;div class="card cardHover my-3 homeCard">
+			&lt;div class="card-body">
+				&lt;h5 class="card-title">Card Title &lt;/h5>
+				&lt;h6 class="card-subtitle mb-2 text-muted">Subtitle &lt;/h6>
+				&lt;p class="card-text">Details: This is where details can be displayed &lt;/h5>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+										</code>
+									</pre>
+								</figure>
+							<hr>
+							
+							<!-- Input -->
+							<a name="input"></a> 
+							<h3 class="pt-4 mb-3">Input</h3>
+							<p>Input fields can be found on various Definitely Not Craigslist pages such as the Create a Listing or in Profiles.  The .form-group class should be applied
+							to parent containers of inputs to provide adequate padding.  Typical form elements and their usage can be found in this section.</p>
+							
+							<h5>Select</h5>
+							<p>Select menus can be found on the search bar and the Create a Listing pages. Bootstrap’s .form-control class is applied to style the select element.</p>
+							<div class=" form-group">
+								<select class="form-control">
+									<option>Find Help</option>
+									<option>Offer Help</option>
+									</select>
+							</div>
+							
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;div class="font-weight-bold form-group">
+		&lt;label>Drop Down&lt;/label>
+		&lt;select class="form-control">
+			&lt;option>Find Help&lt;/option>
+			&lt;option>Offer Help&lt;/option>
+		&lt;/select>
+	/div>
+									</code>
+								</pre>
+							</figure>
+							
+
+							<div class="form-group">
+								<h5>Text Input</h5>
+								<p>Standard text input used to get information such as email or name from users. Bootstrap’s .form-control class is applied to style the select element.</p>
+								<input type="text" placeholder="First Name" class="form-control">
+							</div>
+
+							
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;div class="form-group">
+		&lt;p>Standard bootstrap Text input&lt;/p>
+		&lt;input type="email" placeholder="email@address.com" class="form-control">
+	&lt;/div>
+									</code>
+								</pre>
+							</figure>
+							
+							<h5>Slider</h5>
+							
+							<p>Sliders can be found under search filters.  Input tags must have their types set to range to get this function.  
+							They allow the user specify a specific distance.  They typically have a range of 1 to 50 miles, but can be changed
+							to increase search radius as needed.</p>
+							<input type="range" class="custom-range" id="slider" min="1" max="50">
+							
+								<figure class="border">
+								<pre>
+									<code>
+	&lt;label class="font-weight-bold mt-4">&lt;/label>&lt;span id="distance">Slider&lt;/span>
+	&lt;input type="range" class="custom-range" id="slider" min="1" max="50">
+									</code>
+								</pre>
+							</figure>
+							
+						<h5>Checkboxes</h5>
+						<p>Checkboxes are found under search filters.  Input tags must have their types set to checkbox to get this function.  
+						They should be used to allow users to filter out results by availability.  The .mx-auto class should be applied to center the checkboxes
+						in their container.</p>
+						<table class="mx-auto">
+							<tr>
+								<td><input type="checkbox">Monday</td>
+								<td><input type="checkbox">Tuesday</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Wednesday</td>
+								<td><input type="checkbox">Thursday</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Friday</td>
+								<td><input type="checkbox">Weekends</td>
+							</tr>
+						</table>
+						
+						</figure>
+							
+						
+								<figure class="border">
+								<pre>
+									<code>
+	&lt;table class="mx-auto">
+		&lt;tr>
+			&lt;td>&lt;input type="checkbox">Monday&lt;/td>
+			&lt;td>&lt;input type="checkbox">Tuesday&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>&lt;input type="checkbox">Wednesday&lt;/td>
+			&lt;td>&lt;input type="checkbox">Thursday&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>&lt;input type="checkbox">Friday&lt;/td>
+			&lt;td>&lt;input type="checkbox">Weekends&lt;/td>
+		&lt;/tr>
+	&lt;/table>
+									</code>
+								</pre>
+							</figure>
+							
+							<h5 class="mt-3">Usage Suggestions for All Input</h5>
+							<ul class="">
+								<li>Logins</li>
+								<li>Forms</li>
+								<li>Search bar</li>
+								<li>Filters</li>
+							</ul>
+							<hr>
+
+							<!-- Modal -->
+							<a name="modals"></a>
+							<h3 class="pt-4 mb-3">Modals</h3>
+							
+							<!-- Modal Example -->
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Test Me</button>
+							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Test Me</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+										</div>
+									<div class="modal-body">
+									This is a modal!!!!!!!!!!
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									</div>
+									</div>
+								</div>
+							</div>
+							
+							<h5 class="mt-3">Description</h5>
+							<p>Definitely Not Craigslist uses the modal to expand the profile wizard which aids the user in creating an 
+							effective profile. The modal should contain a guide and a carousel of form inputs for the user to fill out.</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul>
+								<li>Profile Wizard</li>
+							</ul>
+								
+							<h5>Code Snippet</h5>
+						
+							<figure class="border">
+								<pre>
+									<code>
+		&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Test Me&lt;/button>
+		
+		&lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+			&lt;div class="modal-dialog modal-lg" role="document">
+			
+				&lt;div class="modal-content">
+					&lt;div class="modal-header">
+						&lt;h5 class="modal-title" id="exampleModalLabel">Test Me&lt;/h5>
+						&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							&lt;span aria-hidden="true">&times;&lt;/span>
+						&lt;/button>
+					&lt;/div>
+					
+				&lt;div class="modal-body">
+				This is the content of the modal
+				&lt;/div>
+				
+				&lt;div class="modal-footer">
+					&lt;button type="button" class="btn btn-secondary" data-dismiss="modal">Close&lt;/button>
+					&lt;button type="button" class="btn btn-primary">Save changes&lt;/button>
+				&lt;/div>
+				
+				&lt;/div>
+				
+			&lt;/div>
+		&lt;/div>
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							
+							<a name="nav"></a>
+							<h3 class="pt-4 mb-3">Navigation Menus</h3>
+							<nav class="navbar navbar-expand-lg navbar-light border-bottom border-top" id="headerColor">
+	
+								<a class="navbar-brand" href="home.html" title="Home">Definitely Not Craigslist</a>
+								
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								
+								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+									<div class="navbar-nav">
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="profile.html">My Profile</a>
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="messages.html">Messages</a>
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="recommended.html">Recommended</a>
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="listings.html">View All Listings</a>
+										<a class="nav-item nav-link mx-auto font-weight-bold" href="createNew.html">Create Listing</a>
+									</div>
+									
+									<form class="form-inline my-2 my-lg-0 mx-auto" action="results.html">
+									<input class="col-lg-* form-control" type="search" placeholder="Search" aria-label="Search">
+									<select class="custom-select" id="inputGroupSelect02">
+										<option selected>Find Help</option>
+										<option value="1">Offer Help</option>
+									</select>
+									<button class="btn btn-primary my-2 my-sm-0 mx-auto" type="submit">Search</button>
+								</form>
+								</div>
+							</nav>
+							
+							<h5 class="mt-3">Description</h5>
+								<p>A navigation menu is used to allow the user to easily navigate through the website. The navigation menu also features a search bar so the
+								users are able to search from any page.</p>
+							
+							
+							<h5 class="pb-5">Code Snippet</h5>
+							
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;nav class="navbar navbar-expand-lg navbar-light border-bottom border-top" id="headerColor">
+									
+		&lt;a class="navbar-brand" href="home.html" title="Home">Definitely Not Craigslist&lt;/a>
+											
+		&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+			&lt;span class="navbar-toggler-icon">&lt;/span>
+		&lt;/button>
+											
+		&lt;div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			&lt;div class="navbar-nav">
+				&lt;a class="nav-item nav-link mx-auto font-weight-bold" href="profile.html">My Profile&lt;/a>
+				&lt;a class="nav-item nav-link mx-auto font-weight-bold" href="messages.html">Messages&lt;/a>
+				&lt;a class="nav-item nav-link mx-auto font-weight-bold" href="favorites.html">Favorites&lt;/a>
+				&lt;a class="nav-item nav-link mx-auto font-weight-bold" href="recommended.html">Recommended&lt;/a>
+				&lt;a class="nav-item nav-link mx-auto font-weight-bold" href="listings.html">View All Listings&lt;/a>
+				&lt;a class="nav-item nav-link mx-auto font-weight-bold" href="createNew.html">Create Listing&lt;/a>
+			&lt;/div>
+												
+			&lt;form class="form-inline my-2 my-lg-0 mx-auto" action="results.html">
+				&lt;input class="col-lg-* form-control" type="search" placeholder="Search" aria-label="Search">
+					&lt;select class="custom-select" id="inputGroupSelect02">
+						&lt;option selected>Find Help&lt;/option>
+						&lt;option value="1">Offer Help&lt;/option>
+					&lt;/select>
+			&lt;button class="btn btn-primary my-2 my-sm-0 mx-auto" type="submit">Search&lt;/button>
+			&lt;/form>
+		&lt;/div>
+	&lt;/nav>
+										
+									</code>
+								</pre>
+							</figure>
+							<hr>
+			
+							<!-- Notifications -->
+							<a name="noti"></a> 
+							<!-- Put a real html example here!!! -->
+							<h3 class="pt-4 mb-3">Notifications</h3>
+								<div class="container alert alert-warning alert-dismissible fade show" id="notiColor" role="alert">
+									<strong>Welcome, Molly! </strong> You have new <a href="messages.html" class="card-link">messages</a> and <a href="recommended.html" class="card-link ml-0">recommendations</a>.
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+							<h5 class="mt-3">Description</h5>
+							<p class="">Notifictions are used to welcome the user and let them know that they have new messages and recommendations. This gives the 
+							user quick information about what is going on.  
+							</p>
+							
+							<h5 class="mt-3">Usage Suggestions</h5>
+							<ul class="">
+								<li>Welcome the user </li>
+								<li>Alert the user when they need to complete something </li>
+								<li>Letting the user know they have new messages or recommendations </li>
+								
+							</ul>
+							
+							<h5>Code Snippet</h5>
+							</p>
+							<figure class="border">
+								<pre>
+									<code>
+	&lt;div class="container alert alert-warning alert-dismissible fade show" id="notiColor" role="alert">
+		&lt;strong>Welcome, Molly! &lt;/strong> You have new &lt;a href="messages.html" class="card-link">messages&lt;/a> and &lt;a href="recommended.html" class="card-link ml-0">recommendations&lt;/a>.
+		&lt;button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			&lt;span aria-hidden="true">&times;&lt;/span>
+		&lt;/button>
+	&lt;/div>
+									</code>
+								</pre>
+							</figure>
+							<hr>
+							
+							
+					</div>
+				</div>
+			</div>
+	</body>
+
+</html>

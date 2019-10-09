@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Definitely Not Craigslist</title>
+	
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<script src="js/project.js"></script>
+	
+	<!-- Custom styles for the website -->
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+</head>
+
+<body>
+	<!-- Nav bar -->
+	<nav class="navbar navbar-expand-lg navbar-light border-bottom border-top" id="headerColor">
+	
+		<a class="navbar-brand" href="home.html" title="Home">Definitely Not Craigslist</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link mx-auto font-weight-bold" href="profile.html">My Profile</a>
+				<a class="nav-item nav-link mx-auto font-weight-bold" href="messages.html">Messages</a>
+				<a class="nav-item nav-link mx-auto font-weight-bold" href="recommended.html">Recommended</a>
+				<a class="nav-item nav-link mx-auto font-weight-bold active" href="listings.html">View All Listings</a>
+				<a class="nav-item nav-link mx-auto font-weight-bold" href="createNew.html">Create Listing</a>
+			</div>
+			
+			<form class="form-inline my-2 my-lg-0 mx-auto" action="results.html">
+			<input class="col-lg-* form-control" type="search" placeholder="Search" aria-label="Search">
+			<select class="custom-select" id="inputGroupSelect02">
+				<option selected>Find Help</option>
+				<option value="1">Offer Help</option>
+			</select>
+			<button class="btn btn-primary my-2 my-sm-0 mx-auto" type="submit">Search</button>
+		</form>
+		</div>
+		
+		
+	</nav>
+	
+	<h1 class="my-3 text-center">All Listings</h1>
+	
+	
+	<div class="text-center container">
+		<div class="row">
+		
+			<!-- Filters -->
+			<div class="text-center col-4 border d-sm-none d-md-block d-none d-sm-block">
+				<h3 class="mt-2">Filters</h3>
+					<form>
+						<label class="font-weight-bold mt-4">Distance</label><span id="distance"></span>
+						<input type="range" class="custom-range" id="slider" min="1" max="50">
+
+						<label class="font-weight-bold mt-4">Average Rating</label>
+						<select class="custom-select " id="inputGroupSelect02">
+							<option selected>Select One</option>
+							<option value="1">1 Star</option>
+							<option value="1">2 Star</option>
+							<option value="1">3 Star</option>
+							<option value="1">4 Star</option>
+							<option value="1">5 Star</option>
+						</select>
+						
+						<label class="font-weight-bold mt-4">Education</label>
+						<select class="custom-select " id="inputGroupSelect02">
+							<option selected>Select One</option>
+							<option value="1">Some High School</option>
+							<option value="1">High School Graduate</option>
+							<option value="1">Some College</option>
+							<option value="1">College Graduate</option>
+						</select>
+					
+						<div class="mt-4 btn-group btn-group-toggle" data-toggle="buttons">
+							<label class="btn btn-primary">
+								<input type="radio" name="options" id="option1" autocomplete="off" checked>Find Help
+							</label>&nbsp
+							<label class="btn btn-primary">
+								<input type="radio" name="options" id="option2" autocomplete="off">Offer Help
+							</label>
+						</div><br>
+						
+						<label class="font-weight-bold mt-4">Availability</label>
+						<table class="wider mx-auto">
+							<tr>
+								<td><input type="checkbox">Monday</td>
+								<td><input type="checkbox">Tuesday</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Wednesday</td>
+								<td><input type="checkbox">Thursday</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox">Friday</td>
+								<td><input type="checkbox">Weekends</td>
+							</tr>
+						</table>
+						
+						<label class="font-weight-bold mt-4">Tags</label><br>
+						<input class="form-control" type="search"><br>
+						
+						<button class="btn btn-primary mt-4" id="reset" type="reset">Reset Filters</button>
+					</form>
+			</div>
+			
+			
+			
+			<!-- Accordion of listings -->
+			<div class="col-sm border results px-0">	
+				<div id="accordion">
+				
+					<!-- Card 1 -->
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h5 class="mb-0">
+								<button class="btn collapsed" data-toggle="collapse" data-target="#collapseOne">
+								<h3>Looking for help with my house!</h3>
+								</button>
+							</h5>
+						</div>
+
+						<div id="collapseOne" class="collapse " data-parent="#accordion">
+							<div class="card-body">
+								<!-- Job Description -->
+								<div>
+									<img src="images/propic2.png" class="mx-auto d-sm-none d-md-block d-none d-sm-block" title="Profile Pic" alt="Profile">
+								</div>
+								<div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<br><a href="" title="View Reviews">6 Reviews</a>
+									<h4>Jimmy Junior</h4>
+									<h6>Stevens Point, WI (10 miles away)</h6>
+									<h6>Phone Number: 123-456-7890</h6>
+									<h6>Email: jjoo@gmail.com</h6>
+								</div>
+								<div class="mt-4">
+									<p>I need help with such and such.  You can send me a message on here, call me, or email me.</p>
+									<p class="font-weight-light">Tags: Interior Decorator Design Remodeling</p>
+								</div>
+								<div class="input-group">
+									<textarea class="form-control" aria-label="With textarea"></textarea>
+								</div>
+								<button type="button" class="btn btn-primary mt-3">Send Message</button>
+								<br><a href="" class="text-"title="Save">Save to Favorites</a>
+							</div>
+						</div>
+					</div>
+					<!-- Card 2 -->
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h5 class="mb-0">
+								<button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo">
+								<h3>Swim lessons needed</h3>
+								</button>
+							</h5>
+						</div>
+						<div id="collapseTwo" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+								<!-- Job Description -->
+								<div>
+									<img src="images/propic2.png" class="mx-auto d-sm-none d-md-block d-none d-sm-block" id="" title="Profile Pic" alt="Profile">
+								</div>
+								<div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<br><a href="" title="View Reviews">6 Reviews</a>
+									<h4>Jimmy Junior</h4>
+									<h6>Stevens Point, WI (10 miles away)</h6>
+									<h6>Phone Number: 123-456-7890</h6>
+									<h6>Email: jjoo@gmail.com</h6>
+								</div>
+								<div class="mt-4">
+									<p>I need help with such and such.  You can send me a message on here, call me, or email me.</p>
+									<p class="font-weight-light">Tags: Interior Decorator Design Remodeling</p>
+								</div>
+								<div class="input-group">
+									<textarea class="form-control" aria-label="With textarea"></textarea>
+								</div>
+								<button type="button" class="btn btn-primary mt-3">Send Message</button>
+								<br><a href="" class="text-"title="Save">Save to Favorites</a>
+							</div>
+						</div>
+					</div>
+				
+					<!-- Card 3 -->
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h5 class="mb-0">
+								<button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree">
+								<h3>Pool cleaner looking for work</h3>
+								</button>
+							</h5>
+						</div>
+						<div id="collapseThree" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+								<!-- Job Description -->
+								<div>
+									<img src="images/propic2.png" class="mx-auto d-sm-none d-md-block d-none d-sm-block" id="" title="Profile Pic" alt="Profile">
+								</div>
+								<div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<br><a href="" title="View Reviews">6 Reviews</a>
+									<h4>Jimmy Junior</h4>
+									<h6>Stevens Point, WI (10 miles away)</h6>
+									<h6>Phone Number: 123-456-7890</h6>
+									<h6>Email: jjoo@gmail.com</h6>
+								</div>
+								<div class="mt-4">
+									<p>I need help with such and such.  You can send me a message on here, call me, or email me.</p>
+									<p class="font-weight-light">Tags: Interior Decorator Design Remodeling</p>
+								</div>
+								<div class="input-group">
+									<textarea class="form-control" aria-label="With textarea"></textarea>
+								</div>
+								<button type="button" class="btn btn-primary mt-3">Send Message</button>
+								<br><a href="" class="text-"title="Save">Save to Favorites</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Card 4 -->
+					<div class="card">
+						<div class="card-header" id="headingFour">
+							<h5 class="mb-0">
+								<button class="btn collapsed" data-toggle="collapse" data-target="#collapseFour">
+								<h3>Looking for any work</h3>
+								</button>
+							</h5>
+						</div>
+						<div id="collapseFour" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+								<!-- Job Description -->
+								<div>
+									<img src="images/propic2.png" class="mx-auto d-sm-none d-md-block d-none d-sm-block" id="" title="Profile Pic" alt="Profile">
+								</div>
+								<div>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<br><a href="" title="View Reviews">6 Reviews</a>
+									<h4>Jimmy Junior</h4>
+									<h6>Stevens Point, WI (10 miles away)</h6>
+									<h6>Phone Number: 123-456-7890</h6>
+									<h6>Email: jjoo@gmail.com</h6>
+								</div>
+								<div class="mt-4">
+									<p>I need help with such and such.  You can send me a message on here, call me, or email me.</p>
+									<p class="font-weight-light">Tags: Interior Decorator Design Remodeling</p>
+								</div>
+								<div class="input-group">
+									<textarea class="form-control" aria-label="With textarea"></textarea>
+								</div>
+								<button type="button" class="btn btn-primary mt-3">Send Message</button>
+								<br><a href="" class="text-" title="Save">Save to Favorites</a>
+							</div>
+						</div>
+					</div>
+					
+				
+				</div>
+			</div>		
+			
+			
+			
+			
+			
+    
+		</div>
+	</div>
+	
+
+</body>
+
+</html>
